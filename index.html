@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment-3</title>
+	<link rel="stylesheet"  href="css/style.css">
+	<link rel="stylesheet"  href="../bootstrap/css/bootstrap.min.css">
+	<script src="js/icon.js"></script>
+	<script type="text/javascript">
+		function show(id) {
+			var ele = document.getElementById(id);
+			if (ele.style.display === 'block') {
+				// hide block
+				ele.style.display = 'none';
+			} else {
+				// show block
+				ele.style.display = 'block';
+			}
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<label class="logo">Food,LLC</label>
+			<label class="icon">
+				<i class="fas fa-bars" onclick="show('menu_items')"></i>
+			</label>   	
+		</nav>
+		<div id="menu_items">
+			<ul class="menu_list">
+				<li><a href="#">Chicken</a></li>
+				<li><a href="#">Beef</a></li>
+				<li><a href="#">Sushi</a></li>
+			</ul>
+		</div>
+	</header>
+	<div>
+		<h3 class="text-center">Our Menu</h3>
+	</div>
+	<div class="container">
+		<section class="container first-child">
+			<h3 class="section-title">Chicken</h3>
+			<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Deserunt ab quia eum possimus debitis illo consequuntur cum impedit! Non hic ratione minus reiciendis esse laboriosam rem fugit, quam ut iure!Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Deserunt ab quia eum possimus debitis illo consequuntur cum impedit! Non hic ratione minus reiciendis esse laboriosam rem fugit, quam ut iure!</p>
+		</section>
+		<section class="container">
+			<h3 class="section-title">Beef</h3>
+			<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Deserunt ab quia eum possimus debitis illo consequuntur cum impedit! Non hic ratione minus reiciendis esse laboriosam rem fugit, quam ut iure!Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Deserunt ab quia eum possimus debitis illo consequuntur cum impedit! Non hic ratione minus reiciendis esse laboriosam rem fugit, quam ut iure!</p>
+		</section>
+		<section class="container">
+			<h3 class="section-title">Sushi</h3>
+			<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Deserunt ab quia eum possimus debitis illo consequuntur cum impedit! Non hic ratione minus reiciendis esse laboriosam rem fugit, quam ut iure!Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Deserunt ab quia eum possimus debitis illo consequuntur cum impedit! Non hic ratione minus reiciendis esse laboriosam rem fugit, quam ut iure!</p>
+		</section>
+	</div>
+</body>
+</html>
